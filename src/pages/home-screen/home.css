@@ -1,0 +1,104 @@
+.home___section {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider___section {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: var(--primaryColor);
+
+  width: 80%;
+  height: 60vh;
+  clip-path: circle(70% at 60% -50%);
+
+  overflow: hidden;
+}
+
+.home___section--sliderArea {
+  position: absolute;
+  top: 35vh;
+  right: 0;
+  z-index: 5;
+
+  height: fit-content;
+  width: 60%;
+}
+
+.home___section--sliderControler,
+.sliderArea___userButton {
+  height: fit-content;
+  width: 100%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.sliderArea___userButton {
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.home___section--profileImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.home___section--profileImage > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.sliderControler___rightButton,
+.sliderControler___leftButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--primaryColor);
+  color: var(--bgColor);
+}
+
+.home___section--lower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--bgColor);
+
+  padding-left: 3rem;
+}
+
+.home___section--userInfo {
+  position: absolute;
+  top: 30%;
+
+  width: 30%;
+  height: fit-content;
+}
+
+.home___section--userInfo h3,
+.home___section--userInfo p {
+  margin-top: -1rem;
+  margin-bottom: 1.2rem;
+}
+
+.home___section--userInfo p {
+  margin-bottom: 1.8rem;
+}

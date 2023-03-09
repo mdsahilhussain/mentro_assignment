@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+/* ================== Google fonts ====================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* *================== Basic style ====================== */
+
+:root {
+  --bgColor: #ffffff;
+  --primaryColor: #609b6c;
+  --secondaryColor: #bde1b1;
+  --textColor: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  background-color: var(--bgColor);
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--textColor);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+br {
+  color: var(--hoverColor3);
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: unset;
+}
+
+img {
+  outline: none;
+}
+
+.screen {
+  width: 100%;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+  hr {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 576px) {
+  h3 {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
   }
 }
