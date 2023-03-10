@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Moentro Detail Slider
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Moentro Detail Slider is a website that allows users to view multiple mentro details in a slider format with engaging animations. The website is designed to be simple, intuitive, and visually appealing, making it easy for users to navigate and find the information they need.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+To use the website, simply visit the homepage and start browsing the mentro details. The slider is designed to be self-explanatory, so users should have no trouble figuring out how to use it.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The main features of the Moentro Detail Slider website include:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Smooth Animations:
+  The slider animations are smooth and engaging, making it fun for users to browse through the different user details. The animations are designed to be fast and fluid, ensuring that users don't have to wait long for the next slide to load.
 
-### `npm test`
+- Mentro Details:
+  The website displays user details in an easy-to-read format, making it easy for users to find the information they need. Each slide includes a picture of the user, their name, a short description, and links to their social media profiles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Navigation:
+  The slider includes simple navigation buttons that allow users to move forward and backward through the user details. Users can also click on the dots at the bottom of the slider to quickly jump to a specific Moentro detail.
 
-### `npm run build`
+## Technologies Used:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The User Detail Slider website was built using HTML, CSS, JavaScript, and ReactJs. The animations were created using the animista animation library, and the website is hosted on a Netlify server.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### How to Contribute
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you'd like to contribute to the website, feel free to fork the repository and submit a pull request with your changes. Before submitting your changes, please make sure that your code is well-documented and tested.
 
-### `npm run eject`
+#### Conclusion
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Overall, the Moentro Detail Slider website is a fun and engaging way for users to browse through multiple user details. The website is easy to use, visually appealing, and features smooth animations that make browsing through the user details a pleasure.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Clone
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To clone this project use this command
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+  git clone https://github.com/mdsahilhussain/mentro_assignment.git
+```
 
-## Learn More
+## Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install dependencies/requirements to run the code
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+  npm install i
+```
 
-### Code Splitting
+## Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To run project, run the following command
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+  npm start
+```
