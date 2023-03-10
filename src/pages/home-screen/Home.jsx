@@ -44,7 +44,12 @@ const Home = () => {
             <MdSouth />
           </div>
           <div className="home___section--profileImage">
-            <img src={items[user]?.image} alt={items[user]?.name} />
+            <img
+              key={user}
+              src={items[user]?.image}
+              alt={items[user]?.name}
+              className="rotate-in-center"
+            />
           </div>
           <div
             className="sliderControler___leftButton"
@@ -54,22 +59,28 @@ const Home = () => {
           </div>
         </div>
         <div className="sliderArea___userButton">
-          <Button
-            title={items[user]?.name}
-            style={{
-              padding: "0.8rem 1.5rem",
-              backgroundColor: "#bde1b1",
-              color: "#00000",
-              fontSize: "1rem",
-              fontWeight: "bold",
-              borderRadius: "10px",
-            }}
-          />
+          <div
+            key={user}
+            className="scale-in-left"
+            style={{ width: "fit-content", height: "fit-content" }}
+          >
+            <Button
+              title={items[user]?.name}
+              style={{
+                padding: "0.8rem 1.5rem",
+                backgroundColor: "#bde1b1",
+                color: "#00000",
+                fontSize: "1rem",
+                fontWeight: "bold",
+                borderRadius: "10px",
+              }}
+            />
+          </div>
         </div>
       </div>
 
       <div className="home___section--lower">
-        <div className="home___section--userInfo">
+        <div key={user} className="home___section--userInfo scale-in-left">
           <h1>{items[user]?.rating}</h1>
           <h2 style={{ color: "#609b6c" }}>
             <Rating rating={items[user]?.rating} />

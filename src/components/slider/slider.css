@@ -6,8 +6,8 @@
 .item {
   transition: 0.5s;
   position: absolute;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   display: inline-block;
   margin: 0;
