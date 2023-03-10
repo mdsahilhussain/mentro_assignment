@@ -1,0 +1,9 @@
+.button {
+  outline: none;
+  border: none;
+}
+.shadow {
+  -webkit-box-shadow: 1.5px 11px 19px 13px #a0d1a9;
+  -moz-box-shadow: 1.5px 11px 19px 13px #a0d1a9;
+  box-shadow: 1.5px 11px 19px 13px #a0d1a9;
+}

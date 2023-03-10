@@ -1,19 +1,28 @@
 import React, { useState } from "react";
-import { Slider, Button } from "../../components";
+import { Slider, Button, Rating } from "../../components";
 import "./home.css";
-import { MdSouth, MdStar } from "react-icons/md";
+import { MdSouth } from "react-icons/md";
 import { items } from "../../constants/user-data";
 const Home = () => {
   const [angle, setAngle] = useState(0);
   const [user, setUser] = useState(0);
   const sectionAngle = 360 / items.length;
+
   const handleRightClick = () => {
     setAngle(angle - sectionAngle);
+    if (user >= items.length - 1) {
+      setUser(0);
+      return;
+    }
     setUser((current) => current + 1);
   };
 
   const handleLeftClick = () => {
     setAngle(angle + sectionAngle);
+    if (user <= 0) {
+      setUser(items.length - 1);
+      return;
+    }
     setUser((current) => current - 1);
   };
 
@@ -35,7 +44,7 @@ const Home = () => {
             <MdSouth />
           </div>
           <div className="home___section--profileImage">
-            <img src={items[0].image} alt="" />
+            <img src={items[user]?.image} alt={items[user]?.name} />
           </div>
           <div
             className="sliderControler___leftButton"
@@ -46,7 +55,7 @@ const Home = () => {
         </div>
         <div className="sliderArea___userButton">
           <Button
-            title="Book a session"
+            title={items[user]?.name}
             style={{
               padding: "0.8rem 1.5rem",
               backgroundColor: "#bde1b1",
@@ -61,18 +70,16 @@ const Home = () => {
 
       <div className="home___section--lower">
         <div className="home___section--userInfo">
-          <h1>5.0</h1>
-          <h2>Ankita</h2>
-          <h3>ML Engineer @Firework</h3>
-          <p>
-            Working my way to build the world's future product. Machine Learning
-            Engineer, Data and Technology Evangelist I breathe in developing
-            software with intelligence. I have been involved with startups like
-            DailyHunt, Firework Hq, MagilHub to build the AI end of their
-            products.
-          </p>
+          <h1>{items[user]?.rating}</h1>
+          <h2 style={{ color: "#609b6c" }}>
+            <Rating rating={items[user]?.rating} />
+          </h2>
+          <h2>{items[user]?.name}</h2>
+          <h3>{items[user]?.jobTitel}</h3>
+          <p>{items[user]?.descption}</p>
           <Button
             title="Book a session"
+            isShadow={true}
             style={{
               padding: "0.5rem 1.5rem",
               backgroundColor: "#609b6c",

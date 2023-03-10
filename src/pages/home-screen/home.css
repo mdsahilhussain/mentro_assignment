@@ -69,6 +69,8 @@
 
   background-color: var(--primaryColor);
   color: var(--bgColor);
+
+  cursor: pointer;
 }
 
 .home___section--lower {
@@ -87,7 +89,7 @@
 
 .home___section--userInfo {
   position: absolute;
-  top: 30%;
+  bottom: 10%;
 
   width: 30%;
   height: fit-content;
@@ -95,7 +97,6 @@
 
 .home___section--userInfo h3,
 .home___section--userInfo p {
-  margin-top: -1rem;
   margin-bottom: 1.2rem;
 }
 
