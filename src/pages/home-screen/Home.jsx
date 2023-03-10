@@ -28,7 +28,14 @@ const Home = () => {
 
   return (
     <section className="home___section">
-      <div className="slider___section">
+      <div
+        className="slider___section"
+        style={
+          items[user]?.id % 2 === 0
+            ? { backgroundColor: "#609b6c" }
+            : { backgroundColor: "#bde1b1" }
+        }
+      >
         <div className="slider____border"></div>
         <Slider angle={angle} sectionAngle={sectionAngle} />
       </div>
@@ -83,6 +90,8 @@ const Home = () => {
           <h2 style={{ color: "#609b6c" }}>
             <Rating rating={items[user]?.rating} />
           </h2>
+          <p>{items[user]?.id}</p>
+
           <h2>{items[user]?.name}</h2>
           <h3>{items[user]?.jobTitel}</h3>
           <p>{items[user]?.descption}</p>
