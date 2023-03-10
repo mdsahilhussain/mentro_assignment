@@ -1,6 +1,7 @@
 # Moentro Detail Slider
 
 Moentro Detail Slider is a website that allows users to view multiple mentro details in a slider format with engaging animations. The website is designed to be simple, intuitive, and visually appealing, making it easy for users to navigate and find the information they need.
+[mentor.webm](https://user-images.githubusercontent.com/70509500/224296792-51bad1e3-cd29-4f14-9069-16694afad9dc.webm)
 
 ## Getting Started
 
