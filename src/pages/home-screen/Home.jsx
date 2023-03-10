@@ -90,8 +90,6 @@ const Home = () => {
           <h2 style={{ color: "#609b6c" }}>
             <Rating rating={items[user]?.rating} />
           </h2>
-          <p>{items[user]?.id}</p>
-
           <h2>{items[user]?.name}</h2>
           <h3>{items[user]?.jobTitel}</h3>
           <p>{items[user]?.descption}</p>
