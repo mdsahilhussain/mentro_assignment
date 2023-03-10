@@ -15,7 +15,7 @@
 
   width: 80%;
   height: 70vh;
-  clip-path: circle(70% at 60% -50%);
+  clip-path: circle(70% at 60% -45%);
 
   overflow: hidden;
 }
@@ -45,10 +45,25 @@
   align-items: center;
   justify-content: center;
 }
+
 .home___section--profileImage {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+}
+
+.slider____border {
+  position: absolute;
+  z-index: -2;
+  top: 18%;
+  right: 18%;
+  transform: translate(-18% -18%);
+
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+
+  border: 3px dotted var(--bgColor);
 }
 
 .home___section--profileImage > img {

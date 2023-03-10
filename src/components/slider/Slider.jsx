@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { items } from "../../constants/user-data";
 import "./slider.css";
 function Slider({ angle, sectionAngle }) {
@@ -14,7 +14,7 @@ function Slider({ angle, sectionAngle }) {
 
   return (
     <div className="slider">
-      <div className="round-slider">
+      <div className="round___slider">
         {items.map((item, index) => (
           <div key={index} className="item" style={getStyle(index)}>
             <img src={item.image} alt={item.name} />

@@ -29,12 +29,10 @@ const Home = () => {
   return (
     <section className="home___section">
       <div className="slider___section">
-        <Slider
-          style={{ position: "relative" }}
-          angle={angle}
-          sectionAngle={sectionAngle}
-        />
+        <div className="slider____border"></div>
+        <Slider angle={angle} sectionAngle={sectionAngle} />
       </div>
+
       <div className="home___section--sliderArea">
         <div className="home___section--sliderControler">
           <div
