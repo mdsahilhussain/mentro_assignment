@@ -2,6 +2,8 @@
 
 Moentro Detail Slider is a website that allows users to view multiple mentro details in a slider format with engaging animations. The website is designed to be simple, intuitive, and visually appealing, making it easy for users to navigate and find the information they need.
 
+![mentor](https://user-images.githubusercontent.com/70509500/224298366-85f06a04-165d-4183-9241-a91312d87af9.gif)
+
 ## Getting Started
 
 To use the website, simply visit the homepage and start browsing the mentro details. The slider is designed to be self-explanatory, so users should have no trouble figuring out how to use it.
